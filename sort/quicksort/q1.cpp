@@ -20,6 +20,7 @@ void quicksort(float *a, int left, int right) {
 		}
 	}
 
+
 	if (left < j)
 		quicksort(a, left, j);
 	if (i < right)
@@ -52,7 +53,7 @@ void qsort(float *x, int first, int last){
 
 
 int main() {
-	qsort(a, 0, n-1);
+	quicksort(a, 0, n-1);
 	for (int i = 0; i < n; i++) {
 		cout << a[i] << " ";
 	}

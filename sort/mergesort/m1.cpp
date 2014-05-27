@@ -33,6 +33,7 @@ void merge (int begin, int end, int mid, float *l) {
 	for ( int i = begin, j = 0; i <= end; i++, j++ ) {
 		l[i] = tmp[j];
 	}
+	delete[] tmp;
 }
 
 void msort ( int begin, int end, float *l ) {
