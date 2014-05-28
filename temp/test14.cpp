@@ -100,6 +100,13 @@ int main(int argc, char** argv)
    char s[] = "hello";
    const char *p = s;
    char *p1 = (char*)p;
+    int ppp = 10;
+    int  *q = &ppp;
+    cout << *q << endl;
+    int *xxx = q;
+    int **x;
+    int *bbb = *x;
+    bbb = *x;
 }
 
 
